@@ -14,7 +14,7 @@
 #define COMBOS_LIST(X) \
     /* --- 基本操作 (Space, Enter, BS) --- */ \
     X(C123_BS,       KC_BSPC,      KC_E, KC_U, KC_I) \
-    X(C1239_INS,     KC_INS,       KC_E, KC_U, KC_I, KC_RIGHT)\
+    X(C1239_DEL,     KC_DEL,       KC_E, KC_U, KC_I, KC_RIGHT) \
     X(C456_ENTER,    KC_ENTER,     KC_A, KC_UP, KC_O) \
     X(C789_SPACE,    KC_SPACE,     KC_LEFT, KC_DOWN, KC_RIGHT) \
     \
@@ -97,7 +97,6 @@
     X(C16_TAB,       KC_TAB,       KC_E, KC_O) \
     X(C34_SHFTAB,    S(KC_TAB),    KC_I, KC_A) \
     X(C12459_ESC,    KC_ESC,       KC_E, KC_U, KC_A, KC_UP, KC_RGHT) \
-    X(C127_CAPS,     KC_CAPS,      KC_E, KC_U, KC_LEFT) \
     X(C369_HENK,     KC_INT4,      KC_I, KC_O, KC_RGHT) \
     X(C147_MHEN,     KC_INT5,      KC_E, KC_A, KC_LEFT) \
     X(C49_UNDO,      C(KC_Z),      KC_A, KC_RGHT) \
