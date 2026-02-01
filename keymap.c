@@ -63,6 +63,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_FN2] = LAYOUT_9 (
         KC_F10,   KC_F11,   KC_F12,
         KC_MUTE,  KC_MPLY,  KC_PSCR,
-        KC_NO ,   KC_NO,    KC_NUM_LOCK
+        KC_INS ,   KC_CAPS,    KC_NUM_LOCK
     )
 };
