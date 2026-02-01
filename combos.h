@@ -1,7 +1,7 @@
 // combos.h
 #pragma once
 
-/* * •¨—ƒL[”z’u‚Æƒx[ƒXƒŒƒCƒ„[(Layer 0)‚Ì‘Î‰ž
+/* * ç‰©ç†ã‚­ãƒ¼é…ç½®ã¨ãƒ™ãƒ¼ã‚¹ãƒ¬ã‚¤ãƒ¤ãƒ¼(Layer 0)ã®å¯¾å¿œ
  * ,-----------------------.
  * |   1:E   |   2:U   |   3:I   |   
  * |---------+---------+---------|
@@ -12,12 +12,12 @@
  */
 
 #define COMBOS_LIST(X) \
-    /* --- Šî–{‘€ì (Space, Enter, BS) --- */ \
+    /* --- åŸºæœ¬æ“ä½œ (Space, Enter, BS) --- */ \
     X(C123_BS,       KC_BSPC,      KC_E, KC_U, KC_I) \
     X(C456_ENTER,    KC_ENTER,     KC_A, KC_UP, KC_O) \
     X(C789_SPACE,    KC_SPACE,     KC_LEFT, KC_DOWN, KC_RIGHT) \
     \
-    /* --- ƒAƒ‹ƒtƒ@ƒxƒbƒg (Q-Z) --- */ \
+    /* --- ã‚¢ãƒ«ãƒ•ã‚¡ãƒ™ãƒƒãƒˆ (Q-Z) --- */ \
     X(C14_Q,         KC_Q,         KC_E, KC_A) \
     X(C15_W,         KC_W,         KC_E, KC_UP) \
     X(C12_R,         KC_R,         KC_E, KC_U) \
@@ -40,7 +40,7 @@
     X(C89_N,         KC_N,         KC_DOWN, KC_RGHT) \
     X(C69_M,         KC_M,         KC_O, KC_RGHT) \
     \
-    /* --- ”Žš (1-0) --- */ \
+    /* --- æ•°å­— (1-0) --- */ \
     X(C1245_ONE,     KC_1,         KC_E, KC_U, KC_A, KC_UP) \
     X(C2356_TWO,     KC_2,         KC_U, KC_I, KC_UP, KC_O) \
     X(C4578_THREE,   KC_3,         KC_A, KC_UP, KC_LEFT, KC_DOWN) \
@@ -52,7 +52,7 @@
     X(C456789_NIN,   KC_9,         KC_A, KC_UP, KC_O, KC_LEFT, KC_DOWN, KC_RGHT) \
     X(C5798_ZERO,    KC_P0,        KC_UP, KC_LEFT, KC_RGHT, KC_DOWN) \
     \
-    /* --- ‹L†EŠ‡ŒÊ --- */ \
+    /* --- è¨˜å·ãƒ»æ‹¬å¼§ --- */ \
     X(C124_LPRN,     S(KC_8),      KC_E, KC_U, KC_A) \
     X(C245_RPRN,     S(KC_9),      KC_U, KC_A, KC_UP) \
     X(C235_LBRC,     KC_RBRC,      KC_U, KC_I, KC_UP) \
@@ -66,7 +66,7 @@
     X(C368_COLN,     KC_QUOT,      KC_I, KC_O, KC_DOWN) \
     X(C257_SCLN,     KC_SCLN,      KC_U, KC_UP, KC_LEFT) \
     \
-    /* --- ”Šw‹L†E‚»‚Ì‘¼“ÁŽê‹L† --- */ \
+    /* --- æ•°å­¦è¨˜å·ãƒ»ãã®ä»–ç‰¹æ®Šè¨˜å· --- */ \
     X(C56_MINUS,     KC_MINUS,     KC_LEFT, KC_UP, KC_O) \
     X(C489_UND,      S(KC_INT1),   KC_A, KC_DOWN, KC_RGHT) \
     X(C2468_PLUS,    KC_PLUS,      KC_U, KC_A, KC_O, KC_DOWN) \
@@ -88,7 +88,7 @@
     X(C246_CIRC,     KC_EQL,       KC_U, KC_A, KC_O) \
     X(C125_TILD,     KC_PLUS,      KC_E, KC_UP, KC_I) \
     \
-    /* --- ƒiƒrƒQ[ƒVƒ‡ƒ“E‹@”\ƒL[ --- */ \
+    /* --- ãƒŠãƒ“ã‚²ãƒ¼ã‚·ãƒ§ãƒ³ãƒ»æ©Ÿèƒ½ã‚­ãƒ¼ --- */ \
     X(C27_HOME,      KC_HOME,      KC_U, KC_LEFT) \
     X(C18_END,       KC_END,       KC_E, KC_DOWN) \
     X(C29_PGUP,      KC_PGUP,      KC_U, KC_RGHT) \
@@ -102,13 +102,13 @@
     X(C49_UNDO,      C(KC_Z),      KC_A, KC_RGHT) \
     X(C67_REDO,      C(KC_Y),      KC_O, KC_LEFT) \
     \
-    /* --- ’P‘ÌCüƒL[ (OSM: ƒ^ƒbƒvê—p) --- */ \
+    /* --- å˜ä½“ä¿®é£¾ã‚­ãƒ¼ (OSM: ã‚¿ãƒƒãƒ—å°‚ç”¨) --- */ \
     X(C145_SFT,      OSM(MOD_LSFT), KC_E, KC_A, KC_UP) \
     X(C256_GUI,      OSM(MOD_LGUI), KC_U, KC_UP, KC_O) \
     X(C478_CTL,      OSM(MOD_LCTL), KC_A, KC_LEFT, KC_DOWN) \
     X(C589_ALT,      OSM(MOD_LALT), KC_UP, KC_DOWN, KC_RGHT) \
     \
-    /* --- CüƒL[‚Ì‘g‚Ý‡‚í‚¹ (d‚ËŠ|‚¯E‘S6Ží) --- */ \
+    /* --- ä¿®é£¾ã‚­ãƒ¼ã®çµ„ã¿åˆã‚ã› (é‡ã­æŽ›ã‘ãƒ»å…¨6ç¨®) --- */ \
     X(C12456_SFT_GUI, OSM(MOD_LSFT | MOD_LGUI), KC_E, KC_U, KC_A, KC_UP, KC_O) \
     X(C14578_SFT_CTL, OSM(MOD_LSFT | MOD_LCTL), KC_E, KC_A, KC_UP, KC_LEFT, KC_DOWN) \
     X(C14589_SFT_ALT, OSM(MOD_LSFT | MOD_LALT), KC_E, KC_A, KC_UP, KC_DOWN, KC_RGHT) \
@@ -116,7 +116,7 @@
     X(C25689_GUI_ALT, OSM(MOD_LGUI | MOD_LALT), KC_U, KC_UP, KC_O, KC_DOWN, KC_RGHT) \
     X(C45789_CTL_ALT, OSM(MOD_LCTL | MOD_LALT), KC_A, KC_UP, KC_LEFT, KC_DOWN, KC_RGHT) \
     \
-    /* --- ƒŒƒCƒ„[Ø‚è‘Ö‚¦ --- */ \
+    /* --- ãƒ¬ã‚¤ãƒ¤ãƒ¼åˆ‡ã‚Šæ›¿ãˆ --- */ \
     X(C4268_TENKEY,  TG(_TENKEY),  KC_A, KC_U, KC_O, KC_DOWN) \
     X(C12457_FN1,    OSL(_FN1),    KC_E, KC_U, KC_A, KC_UP, KC_LEFT) \
     X(C23568_FN2,    OSL(_FN2),    KC_U, KC_I, KC_UP, KC_O, KC_DOWN)
